@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Fredoka";
+  src: url("./fonts/Fredoka-VariableFont_wdth\,wght.ttf");
+}
+
+:root {
+  --font-family: "Fredoka", sans-serif;
+  --font-size: 24px;
+  --font-weight: 900;
+  --color: rgb(98, 140, 123);
+}
+
+.h1 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  color: var(--color);
+}
+.container {
+  margin: 0;
+  padding: 0;
+  background-image: url("./img/sadik.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 900;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100wv;
+  height: 100px;
+  border-radius: 0 0 0px 0px;
+  backdrop-filter: blur(40px) brightness(1.25);
+  color: rgb(134, 230, 214);
+  padding: 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 20px 4px 20px 15px;
+}
+.firstDiv {
+  display: flex;
+  padding-left: 100px;
+}
+
+.menuBtn {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color);
+  cursor: pointer;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+}
+.menuBtn:hover {
+  color: rgb(4, 69, 126);
+}
+.aboutBtn {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color);
+  cursor: pointer;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  padding-left: 20px;
+}
+.aboutBtn:hover {
+  color: rgb(4, 69, 126);
+}
+
+.contactBtn {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color);
+  cursor: pointer;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+}
+.contactBtn:hover {
+  color: rgb(4, 69, 126);
+}
+.aboutTitle {
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(28, 39, 52);
+}
+.aboutText {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(45, 45, 81);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 650px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 25px 35px;
+  overflow: hidden;
+  backdrop-filter: blur(40px) brightness(1.15);
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  animation: 0.3s ease-out 0s 1 moveup;
+}
+@keyframes moveup {
+  0% {
+    transform: translateY(10%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.menu-section {
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  height: 650px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden;
+  backdrop-filter: blur(40px) brightness(1.15);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  animation: 0.3s ease-out 0s 1 moveup;
+}
+
+.menu-img {
+  width: 100px;
+  height: 80px;
+  margin: 20px;
+  margin-top: 45px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 6px 5px 19px 15px;
+}
+.secondmenu {
+  margin: 10px;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: 13px;
+  color: rgb(18, 29, 40);
+}
+
+.divmenu {
+  display: flex;
+  flex-direction: column;
+}
+.menu-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  border-radius: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 640px;
+  height: 650px;
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden;
+  backdrop-filter: blur(40px) brightness(1.15);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  animation: 0.3s ease-out 0s 1 moveup;
+}
+.close-button {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 150px;
+  padding-left: 20px;
+}
+
+.close-button:hover {
+  color: rgb(4, 69, 126);
+  cursor: pointer;
+}
+
+.contText {
+  font-family: var(--font-family);
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: var(--font-weight);
+  color: rgb(22, 65, 107);
+}
+
+.link {
+  width: 100%;
+  height: 100hv;
+  text-indent: -9999px;
+  color: green;
+}
+.contactsItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  margin-top: 100px;
+  text-decoration: none;
+  background-image: url(./img/boootcamp.jpg);
+  width: 200px;
+  text-indent: px;
+  height: 200px;
+  background-size: contain;
+  border-radius: 104px;
+  box-shadow: 2px 2px 20px 14px #103e28;
+}
