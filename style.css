@@ -3,6 +3,22 @@
   src: url("./fonts/Fredoka-VariableFont_wdth\,wght.ttf");
 }
 
+@media only screen and (max-width: 390px) {
+   
+    .header {
+    font-size: 10px;
+     display: flex;
+     align-items: end;
+     flex-direction: column;
+    
+    }
+    .firstDiv {
+        display: flex;
+        flex-direction: column;
+       font-size: 10px;
+    }
+    
+ }
 :root {
   --font-family: "Fredoka", sans-serif;
   --font-size: 24px;
@@ -31,7 +47,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100wv;
-  height: 100px;
+  max-height: 20vh;
   border-radius: 0 0 0px 0px;
   backdrop-filter: blur(40px) brightness(1.25);
   color: rgb(134, 230, 214);
@@ -41,7 +57,7 @@
 }
 .firstDiv {
   display: flex;
-  padding-left: 100px;
+  right: 0 auto;
 }
 
 .menuBtn {
